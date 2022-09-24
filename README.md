@@ -1,46 +1,17 @@
-# Getting Started with Create React App
+# theContact
+Веб-адаптация популярной игры для компании 3-8 человек
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+____
 
-## Available Scripts
+## Кратко про правила :
+> Выбирается ведущий, остальные игроки становятся в полукруг напротив ведущего. Ведущий загадывает любое слово на русском языке и называет первую букву. Первый игрок пытается угадать слово, он должен объяснить устно или жестами, что это за слово команде. Хотя это может быть и не то слово, которое загадал ведущий, но если его отгадать можно «выбить» следующую букву загаданного слова. Если кто-нибудь из команды понял, о чем идет речь, он говорит: «Есть контакт!»
+> Затем команда считает до 10, если ведущий не успел отгадать слово первого игрока за это время, а напарник из команды угадал, то называется вторая буква слова указанного ведущим. Стратегия игроков — придумывать такие слова, чтобы ведущий не догадался, что это за слово, а команда смогла бы догадаться.
 
-In the project directory, you can run:
+[Посмотреть на финальную версию](http://www.daevolod.ru/)
 
-### `npm start`
+## Стек технологий проекта : 
+React, CSSModules, GraphQL
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Для запуска тестового сервера : 
+Для запуска frontend части : `npm start`
+Для запуска тестового GraphQL сервера : `npm run graphql`
