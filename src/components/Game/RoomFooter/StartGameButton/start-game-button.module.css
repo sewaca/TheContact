@@ -1,0 +1,47 @@
+.startNewGame {
+  margin: 0 10px;
+  background-color: rgb(223, 244, 148);
+}
+.startNewGame:hover {
+  background-color: rgb(199, 223, 110);
+}
+
+
+.modalHeader{
+  margin-bottom: 16px;
+}
+.form{
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.label{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+.label span{
+  margin-bottom: 6px;
+}
+.form input, form textarea{
+  padding:6px 12px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  resize: vertical;
+}
+.form input:focus, form textarea:focus{
+  outline: 0;
+  border: 1px dashed #000;
+  
+}
+.form button[type="submit"]{
+  margin-top: 6px;
+  width: 100%;
+  background-color: #07f;
+  color: #fff;
+  padding: 9px 12px;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3px;
+}

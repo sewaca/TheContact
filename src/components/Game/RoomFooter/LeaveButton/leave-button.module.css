@@ -1,0 +1,12 @@
+.leave {
+  padding: 6px 12px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s;
+  background-color: #a00;
+  color: #fff;
+}
+.leave:hover {
+  background-color: #700;
+}

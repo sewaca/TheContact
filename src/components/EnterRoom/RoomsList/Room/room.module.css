@@ -1,0 +1,60 @@
+.room {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+@media (min-width: 500px) {
+  .room {
+    min-width: 400px;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.roomTitle {
+  font-size: 1.5em;
+  margin-bottom: 6px;
+}
+
+.aboutRoom {
+  color: #666;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.joinRoom {
+  background-color: #07f;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  margin-left: 30px;
+  transition: 0.3s;
+}
+.joinRoom:hover {
+  background-color: rgb(7, 75, 152);
+}
+
+.disabled {
+  background-color: rgb(142, 142, 142);
+  cursor: unset;
+}
+.disabled:hover {
+  background-color: rgb(142, 142, 142);
+}
+
+.overfilled {
+  color: #b00;
+  font-weight: 600;
+}
+
+.error {
+  color: #b00;
+}

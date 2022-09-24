@@ -1,0 +1,101 @@
+enum UserRoleEnum {
+  SPECTATOR
+  PLAYER
+  LEADER
+}
+
+type User {
+  name: String!
+  id: String!
+  role: UserRoleEnum!
+}
+input UserInput {
+  name: String
+  id: String
+  role: UserRoleEnum
+}
+
+type Suggestion {
+  id: String
+  from: String!
+  text: String!
+  answer: String!
+}
+input SuggestionInput {
+  id: String
+  from: String
+  text: String
+  answer: String
+}
+
+enum GamePhaseEnum {
+  INGAME
+  ENDED
+}
+
+type RoomInfo {
+  gamePhase: GamePhaseEnum
+  word: String
+  openedLetters: Int
+  roomId: Int
+  users: [User]
+  # players: [Player]
+  # inroom: [User]
+  suggestions: [Suggestion]
+}
+
+type Query {
+  roomInfo(roomId: Int!): RoomInfo
+  getAllRooms: [RoomInfo]
+}
+
+type joinedUser {
+  roomId: Int!
+  id: String!
+  name: String!
+  role: UserRoleEnum!
+}
+
+type Mutation {
+  createRoom(
+    gamePhase: GamePhaseEnum
+    word: String
+    openedLetters: Int
+    creator: UserInput!
+    suggestions: [SuggestionInput]
+  ): joinedUser!
+  leaveRoom(userId: String!, roomId: Int!): RoomInfo
+  joinRoom(id: String, name: String!, roomId: Int!, role: UserRoleEnum): joinedUser
+  makeSuggestion(
+    playerid: String!
+    roomId: Int!
+    text: String!
+    answer: String!
+  ): Suggestion
+  removeSuggestion(
+    roomId: Int!
+    playerid: String
+    suggestionId: String
+  ): Boolean
+  answerSuggestionLeader(
+    roomId: Int!
+    suggestionId: String!
+    answer: String!
+  ): Boolean!
+  answerSuggestion(
+    playerid: String!
+    roomId: Int!
+    suggestionId: String!
+    answer: String!
+  ): Boolean!
+  makeGuess(roomId: Int!, answer: String!): Boolean!
+  setGameWord(roomId: Int!, word: String!): Boolean!
+  giveRole(roomId: Int!, playerid: String!, newRole: UserRoleEnum!): Boolean!
+}
+
+# ???
+
+type Subscription {
+  listenSuggestions: RoomInfo
+  listenUsers: RoomInfo
+}

@@ -1,0 +1,223 @@
+.user {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: #eee;
+  border-radius: 100%;
+}
+.user .avatar {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user .avatar:hover .avatar {
+  display: block;
+}
+.user:hover {
+  z-index: 1000000000;
+}
+
+.avatarContainer .username {
+  position: absolute;
+  font-size: 12px;
+  padding: 4px;
+  background-color: #f2f2f2;
+  border-radius: 2px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100px;
+  overflow: hidden;
+  z-index: 3;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+}
+.avatarContainer:hover .username {
+  display: flex;
+}
+
+.dialogue {
+  max-width: 300px;
+  max-height: 200px;
+  position: absolute;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  z-index: 1;
+}
+.dialogue:not(.closed) {
+  min-width: 100px;
+  min-height: 50px;
+}
+.dialogue:hover {
+  z-index: 100;
+}
+.dialogue input {
+  margin: 6px 0;
+  border: 1px solid #000;
+  padding: 3px;
+  border-radius: 2px;
+}
+.dialogue button {
+  cursor: pointer;
+  width: 100%;
+  padding: 3px;
+  border-radius: 6px;
+  border: 0;
+  background-color: #07f;
+  color: #fff;
+}
+.dialogue p {
+  padding-right: 15px;
+}
+.dialogue .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  outline: 0 !important;
+}
+.dialogue .close .e1 {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  right: 5px;
+  height: 2px;
+  background-color: #111;
+  transform: translateY(-50%);
+}
+.dialogue .close .e2 {
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  bottom: 5px;
+  transform: translateX(-50%) scaleY(0);
+  width: 1px;
+  background-color: #111;
+}
+.dialogue.closed form,
+.dialogue.closed p {
+  display: none;
+}
+.dialogue.closed .e2 {
+  transform: translateX(-50%);
+}
+
+.leader .avatar {
+  position: relative;
+}
+.leader .avatar::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, 0);
+  background: url("./crown.svg");
+  background-size: cover;
+}
+
+.me {
+  border: 2px solid #07f;
+}
+
+.player1 {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.player1 .dialogue {
+  bottom: 50%;
+  left: 117%;
+  transform: translate(0, 50%);
+}
+
+.player2 {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.player2 .dialogue {
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.player3 {
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+.player3 .dialogue {
+  bottom: 50%;
+  right: 112%;
+  transform: translate(0, 50%);
+}
+
+.player4 {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.player4 .dialogue {
+  bottom: 117%;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+
+.player5 {
+  top: 10%;
+  left: 13%;
+  transform: translate(-50%, 50%);
+}
+.player5 .dialogue {
+  bottom: 110%;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+
+.player6 {
+  top: 10%;
+  right: 5%;
+  transform: translate(-50%, 50%);
+}
+.player6 .dialogue {
+  bottom: 110%;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+
+.player7 {
+  bottom: 20%;
+  right: 3%;
+  transform: translate(-50%, 50%);
+}
+.player7 .dialogue {
+  top: 110%;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+
+.player8 {
+  bottom: 20%;
+  left: 10%;
+  transform: translate(-50%, 50%);
+}
+.player8 .dialogue {
+  top: 110%;
+  right: 50%;
+  transform: translate(50%, 0);
+}

@@ -1,0 +1,47 @@
+.user {
+  margin: 12px 0;
+  background-color: #fff;
+  border-radius: 6px;
+  min-width: 80%;
+  padding: 12px 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.me{
+  margin-left: 6px;
+  color: #999;
+  font-weight: 600;
+}
+.role{
+  margin-top: 3px;
+  color: #999;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+.button {
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #07f;
+  color: #fff;
+  border: 0;
+  padding: 3px 6px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.lastButton{
+  margin-bottom: 0;
+}
+.button:hover {
+  background-color: rgb(6, 65, 132);
+}
+
+.disabled {
+  background-color: #666;
+}

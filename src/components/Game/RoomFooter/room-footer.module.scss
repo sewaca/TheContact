@@ -1,0 +1,43 @@
+.roomFooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 0;
+  border-top: 2px solid #000;
+  background-color: #fff;
+  button {
+    padding: 6px 12px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s;
+  }
+}
+
+.form input,
+form textarea {
+  padding: 6px 12px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  resize: vertical;
+}
+.form input:focus,
+form textarea:focus {
+  outline: 0;
+  border: 1px dashed #000;
+}
+.form button[type="submit"] {
+  margin-top: 6px;
+  width: 100%;
+  background-color: #07f;
+  color: #fff;
+  padding: 9px 12px;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3px;
+}

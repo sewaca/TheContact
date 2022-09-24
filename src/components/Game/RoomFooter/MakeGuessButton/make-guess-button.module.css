@@ -1,0 +1,7 @@
+.guess {
+  margin: 0 10px;
+  background-color: rgb(223, 244, 148);
+}
+.guess:hover {
+  background-color: rgb(199, 223, 110);
+}
